@@ -7,7 +7,6 @@ import com.estudos_dio.personapi.exception.PersonNotFoundException;
 import com.estudos_dio.personapi.services.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,7 +23,7 @@ import java.util.List;
 import javax.validation.Valid;
 
 @RestController
-@RequestMapping("/api/v1/people")
+@RequestMapping("/people")
 @AllArgsConstructor(onConstructor = @__(@Autowired))
 public class PersonController {
 
